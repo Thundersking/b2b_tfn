@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>TFN | Вакансии</title>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#fff">
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#fff">
+-->
+
+	<meta name="description" content="...">
+	<meta name="keywords" content="..." />
+
+	<!--
+<link rel="image_src" href="img/og/og.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://site.com/" />    
+<meta property="og:image" content="http://site.com/img/og/og.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="512">    
+<meta property="og:title" content="..." />
+<meta property="og:description" content="..." />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:site_name" content="site.com" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="site.com"/>
+<meta name="twitter:title" content="...">
+<meta name="twitter:description" content="..."/>
+<meta name="twitter:creator" content="site.com"/>
+<meta name="twitter:image:src" content="http://site.com/img/og/twitter.jpg"/>
+<meta name="twitter:domain" content="http://site.com/"/>
+-->
+
+
+	<!--Yandex Maps API-->
+	<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+  <p class="browserhappy">
+    Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+  </p>
+<![endif]-->
+	<noscript>
+		Вам нужно включить JavaScript в своем браузере, чтобы отображение этой страницы было корректно.
+	</noscript>
+	<div class="overwrap">
+		<div class="wrapper" id="js-wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrap">
+						<a href="index.html" class="header__logo"><img src="img/tnf.svg" alt="TNF"></a>
+						<nav class="header__nav">
+							<ul>
+								<li><a href="categories.html">Продукция</a></li>
+								<li><a href="b2b.html" class="active nolink">B2B</a></li>
+								<li><a href="partners.html">Партнеры</a></li>
+								<li><a href="offers.html">Акции</a></li>
+								<li><a href="news.html">Новости</a></li>
+								<li><a href="about.html">Компания</a></li>
+								<li><a href="#">API</a></li>
+								<li><a href="vacancies.html">Вакансии</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__bar" id="js-header-bar">
+							<div class="header__bar-item">
+								<a href="#" title="Профиль"
+									class="header__bar-unit header__bar-unit--profile-logged-in">
+									<div class="header__bar-unit-hint">
+										<div class="header__bar-unit-hint-cloud">ID: 338675</div>
+									</div>
+								</a>
+							</div>
+							<div class="header__bar-item">
+								<div title="Корзина" class="header__bar-unit header__bar-unit--cart">
+									<div class="header__bar-unit-hint">
+										<div class="header__bar-unit-hint-cloud">Корзина <br>пуста</div>
+									</div>
+								</div>
+							</div>
+							<div class="header__bar-item">
+								<div class="header__search" id="js-header-search">
+									<div class="header__search-overlay js-header-search-open"></div>
+									<button class="btn header__search-btn js-header-search-open"></button>
+									<form action="#" method="get" class="header__search-form">
+										<input type="search" class="input header__search-input open-drop-list"
+											placeholder="Поиск">
+										<ul class="header__search-droplist">
+											<li class="header__search-droplist-item">Samsung Galaxy A6</li>
+											<li class="header__search-droplist-item">Samsung Galaxy A6+</li>
+											<li class="header__search-droplist-item">Samsung Galaxy A7</li>
+											<li class="header__search-droplist-item">Samsung Galaxy A8</li>
+											<li class="header__search-droplist-item">Samsung Galaxy Note 9</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+						</div>
+						<button class="btn mob-menu-btn js-mob-menu-open" id="js-mob-menu-btn"></button>
+					</div>
+				</div>
+			</header>
+			<div class="mob-menu-overlay js-mob-menu-open" id="js-menu-overlay"></div>
+			<div class="mob-menu" id="js-mob-menu">
+				<a href="index.html" class="mob-menu__logo"><img src="img/tnf.svg" alt="TNF"></a>
+				<nav class="mob-menu__nav">
+					<ul>
+						<li><a href="categories.html">Продукция</a></li>
+						<li><a href="b2b.html">B2B</a></li>
+						<li><a href="partners.html">Партнеры</a></li>
+						<li><a href="offers.html">Акции</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="about.html">Компания</a></li>
+						<li><a href="#">API</a></li>
+						<li><a href="vacancies.html" class="active">Вакансии</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main">
+
+				<section class="business">
+					
+					<div class="block-decision">
+						Решение для B2B-рынка
+					</div>
+
+				</section>
+
+
+				<section class="business-offer">
+
+						<h2 class="business-offer__header business-header">Уникальные предложения для вашего бизнеса</h2>
+
+						<div class="business-offer__block">
+							<div class="container">
+								<h3>Решение для  управления, контроля и защиты мобильных устройств</h3>
+								<span>Mobile Device Management (MDM)</span>
+								<div class="business-offer__block_knox">
+									<div class="business-offer__block_pic">
+										<img src="img/b2b/icon/icon-knox_white.png" alt="knox">
+									</div>
+									<div class="business-offer__block_desc">
+										<p class="business-title">Samsung KNOX</p>
+										<p class="business-text">Мобильная платформа безопасности
+											для компаний с развитой системой
+											корпоративной мобильности</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+				</section>
+
+
+				<section class="business-secure">
+
+					<div class="container">
+
+						<h2 class="business-secure__header business-header">Надёжность — на первом месте!</h2>
+
+						<div class="business-secure__items">
+
+							<div class="business-secure__items_block">
+								<div class="business-secure__items_pic">
+									<img src="img/b2b/icon/icon_guarantee.png" alt="Гарантия">
+								</div>
+								<h4 class="business-secure__subheader business-title">Увеличенная гарантия Samsung</h4>
+								<p class="business-secure__desc business-text">Дополнительная защита вашего устройства в непредвиденной ситуации</p>
+							</div>
+
+							<div class="business-secure__items_block">
+								<div class="business-secure__items_pic">
+									<img src="img/b2b/icon/icon_protect.png" alt="Защищенное устройство">
+								</div>
+								<h4 class="business-secure__subheader business-title">Защищенные устройства</h4>
+								<p class="business-secure__desc business-text">Устройства с различными классами защиты от механических воздействий</p>
+							</div>
+
+							<div class="business-secure__items_block">
+								<div class="business-secure__items_pic">
+									<img src="img/b2b/icon/icon_smart-access.png" alt="Smart Аксессуары">
+								</div>
+								<h4 class="business-secure__subheader business-title">Smart Аксессуары</h4>
+								<p class="business-secure__desc business-text">«Умные» аксессуары для корпоративного и промышленного использования</p>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="business-form">
+
+					<div class="container">
+
+						<h2 class="business-form__header business-header">Хочу узнать больше о b2b-решениях</h2>
+
+
+						<div class="business-form__block">
+							<form action="#" method="post">
+								<div class="form-partner form-partner_w">
+									<div class="form-partner__column form-partner__column_l">
+										<div class="form-partner__row">
+											<label class="form-partner__label form-partner__label_w"
+												for="name-partner">ФИО</label>
+											<input type="text" id="name-partner">
+										</div>
+										<div class="form-partner__row">
+											<label class="form-partner__label form-partner__label_w"
+												for="email-partner">Название организации</label>
+											<input type="email" id="email-partner">
+										</div>
+										<div class="form-partner__row">
+											<label class="form-partner__label form-partner__label_w"
+												for="city-partner">E-mail</label>
+											<input type="text" id="city-partner">
+										</div>
+										<div class="form-partner__row">
+											<label class="form-partner__label form-partner__label_w"
+												for="comment-partner">Комментария</label>
+											<textarea name="comment" cols="30" rows="5"
+												id="comment-partner"></textarea>
+										</div>
+									</div>
+									<div class="form-partner__column form-partner__column_r">
+										<div class="form-partner__row">
+											<label class="form-partner__label form-partner__label_w"
+												for="phone-partner">Контактный телефон</label>
+											<input type="tel" id="phone-partner">
+										</div>
+										<div class="form-partner__row">
+											<label class="form-partner__label form-partner__label_w"
+												for="national-partner">Должность</label>
+											<input type="text" id="national-partner">
+										</div>
+										<div class="form-partner__row form-partner__row_b">
+											<div class="form-partner__captcha">
+												<img src="img/b2b/recaptcha.png" alt="">
+											</div>
+											<div class="form-partner__checkbox">
+												<input type="checkbox" class="form-partner__person__checkbox" id="checkbox-consent" onclick='buttonSend.disabled=!buttonSend.disabled'>
+												<p class="form-partner__person">Согласен на обработку <span>персональных данных</span></p>
+												<input type="button" class="form-partner__button" href="#" id="buttonSend" value="Отправить анкету" disabled>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+			<footer class="footer">
+				<div class="footer__main">
+					<div class="container">
+						<div class="footer__wrap">
+							<div class="footer__col">
+								<a href="index.html" class="footer__logo"><img src="img/tnf-white.svg" alt="TNF"></a>
+							</div>
+							<div class="footer__col">
+								<div class="footer__address">47-й км МКАД, <br>г. Москва, Россия</div>
+								<div class="footer__tel"><a href="tel:+74956497175">+7 495 649-71-75</a></div>
+								<div class="footer__mail">Эл. почта <a href="mailto:info@tfnopt.ru">info@tfnopt.ru</a>
+								</div>
+								<a href="be-a-partner.html" class="btn btn--red footer__btn ">СТАТЬ ПАРТНЕРОМ</a>
+							</div>
+							<div class="footer__col">
+								<nav class="footer__nav">
+									<ul>
+										<li><a href="categories.html">Продукция</a></li>
+										<li><a href="b2b.html" class="active nolink">B2B</a></li>
+										<li><a href="partners.html">Партнеры</a></li>
+										<li><a href="offers.html">Акции</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="about.html">Компания</a></li>
+										<li><a href="#">API</a></li>
+										<li><a href="vacancies.html">Вакансии</a></li>
+										<li><a href="contacts.html">Контакты</a></li>
+										<li><a href="#">En</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="footer__col">
+								<form action="#" method="get" class="footer__search">
+									<input class="input footer__search-input" type="search" name="search"
+										placeholder="Найти">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="container">
+						<div class="footer__copyright">&#169; 2019 Группа компаний TFN. All Rights Reserved</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="popup" id="js-enter">
+		<div class="popup__overlay js-enter-open"></div>
+		<div class="popup__main">
+			<div class="sign">
+				<div class="sign__top">
+					<div class="sign__container">
+						<h2 class="sign__title">Вход для партнеров</h2>
+						<form action="#" method="post" class="sign__form">
+							<input type="text" name="partner_id" class="input sign__input" required
+								placeholder="ID партнера">
+							<input type="password" name="partner_password" class="input sign__input" required
+								placeholder="Пароль">
+							<button class="btn btn--red sign__btn" type="submit">ВОЙТИ</button>
+							<div class="sign__bar">
+								<label class="sign__check">
+									<input type="checkbox" name="remamber_me">
+									<span class="sign__check-box"></span>
+									<span class="sign__check-txt">Запомнить меня</span>
+								</label>
+								<a href="#" class="sign__link">Я забыл свой ID / пароль</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="sign__bottom">
+					<div class="sign__container">
+						<p class="sign__txt">Еще не зарегистрированы <br>в нашей системе?</p>
+						<button class="btn btn--red sign__btn">СТАТЬ ПАРТНЕРОМ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--script main-->
+	<script src="js/script.js"></script>
+	<!--jQuery-->
+	<script src="js/vendors/jquery.min.js"></script>
+	<!-- maskedinput -->
+	<script src="js/vendors/jquery.maskedinput.min.js"></script>
+	<!--Formstyler-->
+	<script src="js/vendors/jquery.formstyler.min.js"></script>
+	<!--Slick-->
+	<script src="js/vendors/slick.min.js"></script>
+	<!--init-->
+	<script src="js/jquery.init.js"></script>
+	<!--my scripts-->
+	<script src="js/jquery.main.js"></script>
+</body>
+
+</html>

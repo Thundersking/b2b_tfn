@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>TFN | Вакансии</title>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#fff">
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#fff">
+-->
+
+	<meta name="description" content="...">
+	<meta name="keywords" content="..." />
+
+	<!--
+<link rel="image_src" href="img/og/og.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://site.com/" />    
+<meta property="og:image" content="http://site.com/img/og/og.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="512">    
+<meta property="og:title" content="..." />
+<meta property="og:description" content="..." />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:site_name" content="site.com" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="site.com"/>
+<meta name="twitter:title" content="...">
+<meta name="twitter:description" content="..."/>
+<meta name="twitter:creator" content="site.com"/>
+<meta name="twitter:image:src" content="http://site.com/img/og/twitter.jpg"/>
+<meta name="twitter:domain" content="http://site.com/"/>
+-->
+
+
+	<!--Yandex Maps API-->
+	<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+  <p class="browserhappy">
+    Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+  </p>
+<![endif]-->
+	<noscript>
+		Вам нужно включить JavaScript в своем браузере, чтобы отображение этой страницы было корректно.
+	</noscript>
+	<div class="overwrap">
+		<div class="wrapper" id="js-wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrap">
+						<a href="index.html" class="header__logo"><img src="img/tnf.svg" alt="TNF"></a>
+						<nav class="header__nav">
+							<ul>
+								<li><a href="categories.html">Продукция</a></li>
+								<li><a href="b2b.html" class="active nolink">B2B</a></li>
+								<li><a href="partners.html">Партнеры</a></li>
+								<li><a href="offers.html">Акции</a></li>
+								<li><a href="news.html">Новости</a></li>
+								<li><a href="about.html">Компания</a></li>
+								<li><a href="#">API</a></li>
+								<li><a href="vacancies.html">Вакансии</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__bar" id="js-header-bar">
+							<div class="header__bar-item">
+								<a href="#" title="Профиль"
+									class="header__bar-unit header__bar-unit--profile-logged-in">
+									<div class="header__bar-unit-hint">
+										<div class="header__bar-unit-hint-cloud">ID: 338675</div>
+									</div>
+								</a>
+							</div>
+							<div class="header__bar-item">
+								<div title="Корзина" class="header__bar-unit header__bar-unit--cart">
+									<div class="header__bar-unit-hint">
+										<div class="header__bar-unit-hint-cloud">Корзина <br>пуста</div>
+									</div>
+								</div>
+							</div>
+							<div class="header__bar-item">
+								<div class="header__search" id="js-header-search">
+									<div class="header__search-overlay js-header-search-open"></div>
+									<button class="btn header__search-btn js-header-search-open"></button>
+									<form action="#" method="get" class="header__search-form">
+										<input type="search" class="input header__search-input open-drop-list"
+											placeholder="Поиск">
+										<ul class="header__search-droplist">
+											<li class="header__search-droplist-item">Samsung Galaxy A6</li>
+											<li class="header__search-droplist-item">Samsung Galaxy A6+</li>
+											<li class="header__search-droplist-item">Samsung Galaxy A7</li>
+											<li class="header__search-droplist-item">Samsung Galaxy A8</li>
+											<li class="header__search-droplist-item">Samsung Galaxy Note 9</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+						</div>
+						<button class="btn mob-menu-btn js-mob-menu-open" id="js-mob-menu-btn"></button>
+					</div>
+				</div>
+			</header>
+			<div class="mob-menu-overlay js-mob-menu-open" id="js-menu-overlay"></div>
+			<div class="mob-menu" id="js-mob-menu">
+				<a href="index.html" class="mob-menu__logo"><img src="img/tnf.svg" alt="TNF"></a>
+				<nav class="mob-menu__nav">
+					<ul>
+						<li><a href="categories.html">Продукция</a></li>
+						<li><a href="b2b.html">B2B</a></li>
+						<li><a href="partners.html">Партнеры</a></li>
+						<li><a href="offers.html">Акции</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="about.html">Компания</a></li>
+						<li><a href="#">API</a></li>
+						<li><a href="vacancies.html" class="active">Вакансии</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main">
+
+				<section class="page-knox">
+
+					<div class="container">
+
+						<div class="section-knox">
+
+							<a href="#" class="breadcrumbs__b2b"><img src="/img/knox/arrow-red.png" alt=""> <p>Все B2B решения</p></a>
+
+						</div>
+
+						<div class="page-knox__block">
+							<div class="page-knox__block_pic">
+								<img src="/img/knox/knox-dark.png" alt="">
+							</div>
+							<p>Knox</p>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="page-cloud">
+
+					<div class="container">
+
+						<h2 class="page-cloud__header knox-header">Облачные сервисы</h2>
+
+						<div class="page-cloud__items">
+							
+							<div class="page-cloud__block">
+								<div class="page-cloud__block_pic"><img src="/img/knox/knox-suite.png" alt=""></div>
+								<h4>Knox<br>Suite</h4>
+								<div class="page-cloud__block_desc">
+									<p>Комплексное решение 4 в 1</p>
+									<p>Одна лицензия для всех</p>
+									<p>Простое управление и&nbsp;удобный интерфейс</p>
+								</div>
+							</div>
+
+							<div class="page-cloud__block">
+								<div class="page-cloud__block_pic"><img src="/img/knox/Knox-Mobile-Enrollment.png" alt=""></div>
+								<h4>Knox Mobile Enrollment</h4>
+								<div class="page-cloud__block_desc">
+									<p>Массовая регистрация в&nbsp;системах EMM</p>
+									<p>Автоматизированная регистрация без возможности отмены</p>
+								</div>
+							</div>
+
+							<div class="page-cloud__block">
+								<div class="page-cloud__block_pic"><img src="/img/knox/Knox-Manage.png" alt=""></div>
+								<h4>Knox<br>Manage</h4>
+								<div class="page-cloud__block_desc">
+									<p>Облачное EMM решение</p>
+									<p>Настройка политик безопасности</p>
+									<p>Управление приложениями</p>
+								</div>
+							</div>
+
+							<div class="page-cloud__block">
+								<div class="page-cloud__block_pic"><img src="/img/knox/KnoxPlatformEnterprise.png" alt=""></div>
+								<h4>Knox Platform for Enterprise</h4>
+								<div class="page-cloud__block_desc">
+									<p>Встроенный программно-аппаратный комплекс</p>
+									<p>Надёжная защита данных</p>
+								</div>
+							</div>
+
+							<div class="page-cloud__block">
+								<div class="page-cloud__block_pic"><img src="/img/knox/Samsung-E-FOTA.png" alt=""></div>
+								<h4>Samsung<br>E-FOTA*</h4>
+								<div class="page-cloud__block_desc">
+									<p>Управление версиями ОС</p>
+									<p>Настройка обновления ОС</p>
+									<span>* FOTA – Firmware Over The Air</span>
+								</div>
+							</div>
+
+							<div class="page-cloud__block">
+								<div class="page-cloud__block_pic"><img src="/img/knox/Knox-Configure.png" alt=""></div>
+								<h4>Knox Configure</h4>
+								<div class="page-cloud__block_desc">
+									<p>Настройка устройства «из&nbsp;коробки»</p>
+									<p>Массовая конфигурация устройств</p>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="page-security">
+
+					<div class="container">
+
+						<h2 class="page-security__header knox-header">Платформа безопасности на устройстве</h2>
+
+						<div class="page-security__desc">Knox — это многоуровневая платформа, встроенная в новейшие устройства Samsung на аппаратном 
+							и&nbsp;программном уровнях. Knox непрерывно контролирует целостность всех подсистем устройств с&nbsp;помощью цепочки специальных процедур, 
+							начиная с уровня платформы и заканчивая операционной системой, регистрируя при этом любые попытки совершения вредоносных атак.
+						</div>
+
+						<div class="page-security__block">
+
+							<div class="page-security__block_container">
+								<div class="page-security__block_container_pic">
+									<img src="/img/knox/KnoxPlatformEnterprise.png" alt="">
+								</div>
+								<p>Интегрирован контейнер Knox Workspace</p>
+							</div>
+
+							<div class="page-security__block_pic">
+								<img src="/img/knox/security.png" alt="">
+							</div>
+
+						</div>
+
+						<div class="page-security__content">
+
+							<div class="page-security__content_items">
+
+								<div class="page-security__content_items_block">
+									<div class="page-security__content_pic"><img src="/img/knox/folder-01.png" alt="folder"></div>
+									<div class="page-security__content_arrow"><img src="/img/knox/arrow_blue.png" alt="arrow"></div>
+									<div class="page-security__content_pic"><img src="/img/knox/folder-02.png" alt="folder"></div>
+								</div>
+
+								<div class="page-security__content_items_block">
+									<div class="page-security__content_pic"><img src="/img/knox/note-01.png" alt="note"></div>
+									<div class="page-security__content_arrow"><img src="/img/knox/arrow_blue.png" alt="arrow"></div>
+									<div class="page-security__content_pic"><img src="/img/knox/note-02.png" alt="note"></div>
+								</div>
+
+								<div class="page-security__content_items_block">
+									<div class="page-security__content_pic"><img src="/img/knox/calendar-01.png" alt="calendar"></div>
+									<div class="page-security__content_arrow"><img src="/img/knox/arrow_blue.png" alt="arrow"></div>
+									<div class="page-security__content_pic"><img src="/img/knox/calendar-02.png" alt="calendar"></div>
+								</div>
+
+								<div class="page-security__content_items_block">
+									<div class="page-security__content_pic"><img src="/img/knox/contact-01.png" alt="contact"></div>
+									<div class="page-security__content_arrow"><img src="/img/knox/arrow_blue.png" alt="arrow"></div>
+									<div class="page-security__content_pic"><img src="/img/knox/contact-02.png" alt="contact"></div>
+								</div>
+
+							</div>
+
+							<div class="page-security__content_phone">
+								<div class="page-security__content_items_phone_pic">
+									<img src="/img/knox/phone.png" alt="phone">
+								</div>
+								<p>Контейнер Knox Platform for Enterprise</p>
+							</div>
+
+						</div>
+
+						<p class="page-security__subdesc">Проверка целостности устройства в реальном времени Настройка VPN, APN, встроенного брандмауэра</p>
+
+					</div>
+
+					<div class="page-security__pic">
+						<img src="/img/knox/bg-knox.jpg" alt="">
+					</div>
+
+				</section>
+
+
+				<section class="page-knox-suite">
+
+					<div class="container">
+
+						<div class="page-knox-suite__pic">
+							<img src="/img/knox/knox-suite-cloud.png" alt="">
+						</div>
+						<div class="page-knox-suite__items">
+							<p>Knox Platform<br>for&nbsp;Enterprise</p>
+							<p>Knox Mobile<br>Enrollment</p>
+							<p>Knox Manage</p>
+							<p>Knox E&nbsp;-&nbsp;FOTA</p>
+						</div>
+
+						<div class="page-knox-suite__desc">
+							<p>Оптимизация процессов: подключение единого
+								доступа&nbsp;ко&nbsp;всем включенным продуктам.</p>
+							<p>Удобный пользовательский интерфейс для IT-специалистов 
+							позволит легко управлять продуктом.</p>
+						</div>
+						
+					</div>
+
+				</section>
+
+
+				<section class="page-knox-configure">
+
+					<div class="container">
+
+						<h2 class="page-knox-configure__header knox-header">Удаленная кастомизация и&nbsp;настройка устройств Samsung</h2>
+
+						<div class="page-knox-configure__block">
+
+							<div class="page-knox-configure__block_item">
+								<div class="page-knox-configure__block_pic">
+									<img src="/img/knox/icon-box.png" alt="box">
+								</div>
+								<p>Полностью настроенное устройство прямо из&nbsp;коробки</p>
+							</div>
+
+							<div class="page-knox-configure__block_item">
+								<div class="page-knox-configure__block_pic">
+									<img src="/img/knox/icon-spec.png" alt="spec">
+								</div>
+								<p>Создание узкоспециализированного устройства</p>
+							</div>
+
+							<div class="page-knox-configure__block_item">
+								<div class="page-knox-configure__block_pic">
+									<img src="/img/knox/icon-brand.png" alt="brand">
+								</div>
+								<p>Брендирование оборудования</p>
+							</div>
+
+							<div class="page-knox-configure__block_item">
+								<div class="page-knox-configure__block_pic">
+									<img src="/img/knox/icon-setting.png" alt="setting">
+								</div>
+								<p>Тонкая настройка устройств</p>
+							</div>
+
+						</div>
+
+						<div class="page-knox-configure__cloud">
+							<div class="page-knox-configure__cloud_pic_1">
+								<img src="/img/knox/knox-conf-cloud.png" alt="cloud">
+							</div>
+							<div class="page-knox-configure__cloud_pic_2">
+								<img src="/img/knox/configure.png" alt="configure">
+							</div>
+							<p>Конфигурирование устройств «по воздуху»</p>
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="page-knox-manage">
+
+					<div class="page-knox-manage__cloud">
+
+						<div class="container">
+
+							<h2 class="page-knox-manage__header knox-header">Бюджетное облачное EMM-решение</h2>
+
+							<div class="page-knox-manage__cloud_block">
+								<div class="page-knox-manage__cloud_item page-knox-manage__cloud_tv">
+									<img src="/img/knox/tv-knox.png" alt="">
+								</div>
+								<div class="page-knox-manage__cloud_item">
+									<div class="page-knox-manage__cloud_item_list page-knox-manage__cloud_item_list_01">
+										<img src="/img/knox/knox-manage-cloud.png" alt="">
+									</div>
+									<div class="page-knox-manage__cloud_item_list page-knox-manage__cloud_item_list_02">
+										<div class="page-knox-manage__cloud_item_pic"><img src="/img/knox/phone_001.png" alt=""></div>
+										<div class="page-knox-manage__cloud_item_pic"><img src="/img/knox/phone_002.png" alt=""></div>
+										<div class="page-knox-manage__cloud_item_pic"><img src="/img/knox/phone_003.png" alt=""></div>
+										<div class="page-knox-manage__cloud_item_pic"><img src="/img/knox/Laptop.png" alt=""></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="page-knox-manage__block">
+
+						<div class="container">
+
+							<div class="page-knox-manage__block_content">
+
+								<div class="page-knox-manage__block_item">
+									<div class="page-knox-manage__block_pic">
+										<img src="/img/knox/icon-spec-inf.png" alt="">
+									</div>
+									<p class="page-knox-manage__block_desc">Нет необходимости в&nbsp;специализированной инфраструктуре</p>
+								</div>
+
+								<div class="page-knox-manage__block_item">
+									<div class="page-knox-manage__block_pic">
+										<img src="/img/knox/icon-license.png" alt="">
+									</div>
+									<p class="page-knox-manage__block_desc">Конкурентный лицензионный сбор</p>
+									<p class="page-knox-manage__block_subdesc">~ на 50% — 70% дешевле других MDM</p>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="page-e-fota">
+
+					<div class="container">
+
+						<div class="page-e-fota__block">
+
+							<h2 class="page-e-fota__header knox-header">Что такое E-FOTA*?</h2>
+							<p class="page-e-fota__subheader">Контроль версии ОС на парке мобильных устройств</p>
+							<p class="page-e-fota__desc">Полный контроль компании над версиями встроенного ПО своих мобильных устройств с возможностью прозрачного обновления на новые протестированные версии ОС в удобное для бизнеса время. </p>
+							<div class="page-e-fota__pic">
+								<img src="/img/knox/e-fote.png" alt="">
+							</div>
+							<p class="page-e-fota__subdesc">*E-FOTA — Enterprise Firmware Over-The-Air</p>
+						
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="page-container">
+
+					<div class="container">
+
+						<h2 class="page-container__header knox-header">Рабочий контейнер, изолирующий корпоративные приложения и данные</h2>
+
+						<div class="page-container__block">
+
+							<div class="page-container__block_elem">
+								<div class="page-container__block_elem_pic">
+									<img src="/img/knox/corpor-act.png" alt="">
+								</div>
+								<p>Активируется и&nbsp;управляется корпоративным MDM</p>
+							</div>
+
+							<div class="page-container__block_elem page-container__block_arrow">
+								<div class="page-container__block_elem_pic">
+									<img src="/img/knox/arrow_e-fota.png" alt="">
+								</div>
+							</div>
+
+							<div class="page-container__block_elem">
+								<div class="page-container__block_elem_pic">
+									<img src="/img/knox/phone_e-fota.png" alt="">
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="page-enrollment">
+
+					<div class="container">
+
+						<h2 class="page-enrollment__header knox-header">Knox Mobile Enrollment</h2>
+						<p class="page-enrollment__desc">Быстрая регистрация тысячи устройств для корпоративного использования</p>
+
+						<div class="page-enrollment__pic">
+							<img src="/img/knox/mobile_enrollment.png" alt="">
+						</div>
+
+					</div>
+
+				</section>
+
+
+
+			</div>
+			<footer class="footer">
+				<div class="footer__main">
+					<div class="container">
+						<div class="footer__wrap">
+							<div class="footer__col">
+								<a href="index.html" class="footer__logo"><img src="img/tnf-white.svg" alt="TNF"></a>
+							</div>
+							<div class="footer__col">
+								<div class="footer__address">47-й км МКАД, <br>г. Москва, Россия</div>
+								<div class="footer__tel"><a href="tel:+74956497175">+7 495 649-71-75</a></div>
+								<div class="footer__mail">Эл. почта <a href="mailto:info@tfnopt.ru">info@tfnopt.ru</a>
+								</div>
+								<a href="be-a-partner.html" class="btn btn--red footer__btn ">СТАТЬ ПАРТНЕРОМ</a>
+							</div>
+							<div class="footer__col">
+								<nav class="footer__nav">
+									<ul>
+										<li><a href="categories.html">Продукция</a></li>
+										<li><a href="b2b.html" class="active nolink">B2B</a></li>
+										<li><a href="partners.html">Партнеры</a></li>
+										<li><a href="offers.html">Акции</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="about.html">Компания</a></li>
+										<li><a href="#">API</a></li>
+										<li><a href="vacancies.html">Вакансии</a></li>
+										<li><a href="contacts.html">Контакты</a></li>
+										<li><a href="#">En</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="footer__col">
+								<form action="#" method="get" class="footer__search">
+									<input class="input footer__search-input" type="search" name="search"
+										placeholder="Найти">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="container">
+						<div class="footer__copyright">&#169; 2019 Группа компаний TFN. All Rights Reserved</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="popup" id="js-enter">
+		<div class="popup__overlay js-enter-open"></div>
+		<div class="popup__main">
+			<div class="sign">
+				<div class="sign__top">
+					<div class="sign__container">
+						<h2 class="sign__title">Вход для партнеров</h2>
+						<form action="#" method="post" class="sign__form">
+							<input type="text" name="partner_id" class="input sign__input" required
+								placeholder="ID партнера">
+							<input type="password" name="partner_password" class="input sign__input" required
+								placeholder="Пароль">
+							<button class="btn btn--red sign__btn" type="submit">ВОЙТИ</button>
+							<div class="sign__bar">
+								<label class="sign__check">
+									<input type="checkbox" name="remamber_me">
+									<span class="sign__check-box"></span>
+									<span class="sign__check-txt">Запомнить меня</span>
+								</label>
+								<a href="#" class="sign__link">Я забыл свой ID / пароль</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="sign__bottom">
+					<div class="sign__container">
+						<p class="sign__txt">Еще не зарегистрированы <br>в нашей системе?</p>
+						<button class="btn btn--red sign__btn">СТАТЬ ПАРТНЕРОМ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--script main-->
+	<script src="js/script.js"></script>
+	<!--jQuery-->
+	<script src="js/vendors/jquery.min.js"></script>
+	<!-- maskedinput -->
+	<script src="js/vendors/jquery.maskedinput.min.js"></script>
+	<!--Formstyler-->
+	<script src="js/vendors/jquery.formstyler.min.js"></script>
+	<!--Slick-->
+	<script src="js/vendors/slick.min.js"></script>
+	<!--init-->
+	<script src="js/jquery.init.js"></script>
+	<!--my scripts-->
+	<script src="js/jquery.main.js"></script>
+</body>
+
+</html>

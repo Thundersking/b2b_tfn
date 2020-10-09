@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>TFN | Вакансии</title>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#fff">
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#fff">
+-->
+
+	<meta name="description" content="...">
+	<meta name="keywords" content="..." />
+
+	<!--
+<link rel="image_src" href="img/og/og.jpg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://site.com/" />    
+<meta property="og:image" content="http://site.com/img/og/og.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="512">    
+<meta property="og:title" content="..." />
+<meta property="og:description" content="..." />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:site_name" content="site.com" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="site.com"/>
+<meta name="twitter:title" content="...">
+<meta name="twitter:description" content="..."/>
+<meta name="twitter:creator" content="site.com"/>
+<meta name="twitter:image:src" content="http://site.com/img/og/twitter.jpg"/>
+<meta name="twitter:domain" content="http://site.com/"/>
+-->
+
+
+	<!--Yandex Maps API-->
+	<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
+</head>
+
+<body>
+	<!--[if lt IE 8]>
+  <p class="browserhappy">
+    Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+  </p>
+<![endif]-->
+	<noscript>
+		Вам нужно включить JavaScript в своем браузере, чтобы отображение этой страницы было корректно.
+	</noscript>
+	<div class="overwrap">
+		<div class="wrapper" id="js-wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrap">
+						<a href="index.html" class="header__logo"><img src="img/tnf.svg" alt="TNF"></a>
+						<nav class="header__nav">
+							<ul>
+								<li><a href="categories.html">Продукция</a></li>
+								<li><a href="b2b.html" class="active nolink">B2B</a></li>
+								<li><a href="partners.html">Партнеры</a></li>
+								<li><a href="offers.html">Акции</a></li>
+								<li><a href="news.html">Новости</a></li>
+								<li><a href="about.html">Компания</a></li>
+								<li><a href="#">API</a></li>
+								<li><a href="vacancies.html">Вакансии</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="header__bar" id="js-header-bar">
+							<div class="header__bar-item">
+								<a href="#" title="Профиль"
+									class="header__bar-unit header__bar-unit--profile-logged-in">
+									<div class="header__bar-unit-hint">
+										<div class="header__bar-unit-hint-cloud">ID: 338675</div>
+									</div>
+								</a>
+							</div>
+							<div class="header__bar-item">
+								<div title="Корзина" class="header__bar-unit header__bar-unit--cart">
+									<div class="header__bar-unit-hint">
+										<div class="header__bar-unit-hint-cloud">Корзина <br>пуста</div>
+									</div>
+								</div>
+							</div>
+							<div class="header__bar-item">
+								<div class="header__search" id="js-header-search">
+									<div class="header__search-overlay js-header-search-open"></div>
+									<button class="btn header__search-btn js-header-search-open"></button>
+									<form action="#" method="get" class="header__search-form">
+										<input type="search" class="input header__search-input open-drop-list"
+											placeholder="Поиск">
+										<ul class="header__search-droplist">
+											<li class="header__search-droplist-item">Samsung Galaxy A6</li>
+											<li class="header__search-droplist-item">Samsung Galaxy A6+</li>
+											<li class="header__search-droplist-item">Samsung Galaxy A7</li>
+											<li class="header__search-droplist-item">Samsung Galaxy A8</li>
+											<li class="header__search-droplist-item">Samsung Galaxy Note 9</li>
+										</ul>
+									</form>
+								</div>
+							</div>
+						</div>
+						<button class="btn mob-menu-btn js-mob-menu-open" id="js-mob-menu-btn"></button>
+					</div>
+				</div>
+			</header>
+			<div class="mob-menu-overlay js-mob-menu-open" id="js-menu-overlay"></div>
+			<div class="mob-menu" id="js-mob-menu">
+				<a href="index.html" class="mob-menu__logo"><img src="img/tnf.svg" alt="TNF"></a>
+				<nav class="mob-menu__nav">
+					<ul>
+						<li><a href="categories.html">Продукция</a></li>
+						<li><a href="b2b.html">B2B</a></li>
+						<li><a href="partners.html">Партнеры</a></li>
+						<li><a href="offers.html">Акции</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="about.html">Компания</a></li>
+						<li><a href="#">API</a></li>
+						<li><a href="vacancies.html" class="active">Вакансии</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="main">
+
+				<section class="breadcrumbs-guarantee">
+
+					<div class="container">
+
+						<div class="section-knox">
+
+							<a href="#" class="breadcrumbs__b2b"><img src="/img/knox/arrow-red.png" alt=""> <p>Все B2B решения</p></a>
+
+						</div>
+
+					</div>
+
+				</section>
+
+
+				<section class="page-guarantee">
+
+					<div class="container">
+
+						<h2 class="page-guarantee__header knox-header">Увеличенная гарантия Samsung</h2>
+
+						<p class="page-guarantee__desc">Дополнительная гарантия Samsung позволяет увеличить срок гарантийного обслуживания на 1 или 2 года. Сертификат защиты экрана предоставляет право на его однократную замену в случае механического повреждения в течение всего срока действия.</p>
+
+					</div>
+
+					<div class="page-guarantee__pic">
+						<img src="/img/guarantee/bg-guarantee.jpg" alt="">
+					</div>
+
+				</section>
+
+
+				<section class="page-certificate">
+
+					<div class="container">
+
+						<h2 class="page-certificate__header knox-header">Сертификаты увеличенной 
+							гарантии Samsung <span>(смартфоны + планшеты)</span></h2>
+
+						<div class="block-certificate">
+
+							<div class="block-certificate__item">
+								<div class="block-certificate__item_pic">
+									<img src="/img/guarantee/protect_glasses.png" alt="protect">
+								</div>
+								<h4 class="block-certificate__header">«Защита экрана»</h4>
+								<div class="block-certificate__desc">
+									<p>Срок действия: 1 год с даты отгрузки устройства конечному заказчику.</p>
+									<p>Количество обращений: 1.</p>
+									<p>Предоставляет потребителю право на&nbsp;однократную замену без взимания платы за&nbsp;ремонт и замененные запасные части:</p>
+									<p>a) дисплея или задней панели смартфона в&nbsp;случае механического повреждения (не&nbsp;более одной детали),</p>
+									<p>b) аккумулятора смартфона (при&nbsp;необходимости).</p>
+								</div>
+							</div>
+
+							<div class="block-certificate__item">
+								<div class="block-certificate__item_pic">
+									<img src="/img/guarantee/guarantee_001.png" alt="protect">
+								</div>
+								<h4 class="block-certificate__header">«+1 год гарантии»</h4>
+								<div class="block-certificate__desc">
+									<p>Срок действия: 1 год со дня окончания основной гарантии производителя.</p>
+									<p>Количество обращений: не ограничено.</p>
+									<p>Предоставляет потребителю право на устранение недостатков изделия без взимания платы за ремонт 
+										и&nbsp;замененные запасные части на условиях, указанных 
+										в&nbsp;гарантийном талоне на изделие.
+									</p>
+								</div>
+							</div>
+
+							<div class="block-certificate__item">
+								<div class="block-certificate__item_pic">
+									<img src="/img/guarantee/guarantee_002.png" alt="protect">
+								</div>
+								<h4 class="block-certificate__header">«+2 года гарантии»</h4>
+								<div class="block-certificate__desc">
+									<p>Срок действия: 2 года со дня окончания основной гарантии производителя.</p>
+									<p>Количество обращений: не ограничено.</p>
+									<p>Предоставляет потребителю право на устранение недостатков изделия без взимания платы за ремонт 
+										и&nbsp;замененные запасные части на условиях, указанных 
+										в гарантийном талоне на изделие.
+									</p>
+								</div>
+							</div>
+
+							<div class="block-certificate__item">
+								<div class="block-certificate__item_pic">
+									<img src="/img/guarantee/comb.png" alt="protect">
+								</div>
+								<h4 class="block-certificate__header">«Комбинированный»</h4>
+								<div class="block-certificate__desc">
+									<span>Включает: 2 года «Защита экрана» и «+1 год гарантии».</span>
+									<p>Срок действия: 2 года с даты отгрузки устройства конечному заказчику.</p>
+									<p>Предоставляет потребителю право на 2 обращения 
+										в&nbsp;период действия сертификата для бесплатной замены: </p>
+									<p>a) дисплея или задней панели смартфона в&nbsp;случае механического повреждения (не&nbsp;более одной детали).</p>
+									<p>b) аккумулятора смартфона (при&nbsp;необходимости).</p>
+									<p>А также право на устранение недостатков изделия 
+										без&nbsp;взимания платы за ремонт и замененные запасные части на условиях, указанных в гарантийном талоне 
+										на изделие, в течение 1 года после окончания основной гарантии.
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					
+				</section>
+
+
+				
+				
+
+
+
+
+			</div>
+			<footer class="footer">
+				<div class="footer__main">
+					<div class="container">
+						<div class="footer__wrap">
+							<div class="footer__col">
+								<a href="index.html" class="footer__logo"><img src="img/tnf-white.svg" alt="TNF"></a>
+							</div>
+							<div class="footer__col">
+								<div class="footer__address">47-й км МКАД, <br>г. Москва, Россия</div>
+								<div class="footer__tel"><a href="tel:+74956497175">+7 495 649-71-75</a></div>
+								<div class="footer__mail">Эл. почта <a href="mailto:info@tfnopt.ru">info@tfnopt.ru</a>
+								</div>
+								<a href="be-a-partner.html" class="btn btn--red footer__btn ">СТАТЬ ПАРТНЕРОМ</a>
+							</div>
+							<div class="footer__col">
+								<nav class="footer__nav">
+									<ul>
+										<li><a href="categories.html">Продукция</a></li>
+										<li><a href="b2b.html" class="active nolink">B2B</a></li>
+										<li><a href="partners.html">Партнеры</a></li>
+										<li><a href="offers.html">Акции</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="about.html">Компания</a></li>
+										<li><a href="#">API</a></li>
+										<li><a href="vacancies.html">Вакансии</a></li>
+										<li><a href="contacts.html">Контакты</a></li>
+										<li><a href="#">En</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="footer__col">
+								<form action="#" method="get" class="footer__search">
+									<input class="input footer__search-input" type="search" name="search"
+										placeholder="Найти">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="container">
+						<div class="footer__copyright">&#169; 2019 Группа компаний TFN. All Rights Reserved</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="popup" id="js-enter">
+		<div class="popup__overlay js-enter-open"></div>
+		<div class="popup__main">
+			<div class="sign">
+				<div class="sign__top">
+					<div class="sign__container">
+						<h2 class="sign__title">Вход для партнеров</h2>
+						<form action="#" method="post" class="sign__form">
+							<input type="text" name="partner_id" class="input sign__input" required
+								placeholder="ID партнера">
+							<input type="password" name="partner_password" class="input sign__input" required
+								placeholder="Пароль">
+							<button class="btn btn--red sign__btn" type="submit">ВОЙТИ</button>
+							<div class="sign__bar">
+								<label class="sign__check">
+									<input type="checkbox" name="remamber_me">
+									<span class="sign__check-box"></span>
+									<span class="sign__check-txt">Запомнить меня</span>
+								</label>
+								<a href="#" class="sign__link">Я забыл свой ID / пароль</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="sign__bottom">
+					<div class="sign__container">
+						<p class="sign__txt">Еще не зарегистрированы <br>в нашей системе?</p>
+						<button class="btn btn--red sign__btn">СТАТЬ ПАРТНЕРОМ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--script main-->
+	<script src="js/script.js"></script>
+	<!--jQuery-->
+	<script src="js/vendors/jquery.min.js"></script>
+	<!-- maskedinput -->
+	<script src="js/vendors/jquery.maskedinput.min.js"></script>
+	<!--Formstyler-->
+	<script src="js/vendors/jquery.formstyler.min.js"></script>
+	<!--Slick-->
+	<script src="js/vendors/slick.min.js"></script>
+	<!--init-->
+	<script src="js/jquery.init.js"></script>
+	<!--my scripts-->
+	<script src="js/jquery.main.js"></script>
+</body>
+
+</html>
