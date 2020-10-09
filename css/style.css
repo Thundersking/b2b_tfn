@@ -1851,7 +1851,13 @@ input[type=search] {
 	}
 
 	.business-offer__block_pic {
-		max-width: 115px;
+		width: 115px;
+		height: 130px;
+	}
+	
+	a.page-business:hover .business-offer__block_pic {
+		width: 115px;
+		height: 130px;
 	}
 
 	.business-secure__items {
@@ -2133,7 +2139,13 @@ input[type=search] {
 	}
 
 	.business-offer__block_pic {
-		max-width: 100px;
+		width: 100px;
+		height: 113px;
+	}
+	
+	a.page-business:hover .business-offer__block_pic {
+		width: 100px;
+		height: 113px;
 	}
 
 	.business-offer__block {
