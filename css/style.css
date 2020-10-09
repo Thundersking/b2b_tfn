@@ -980,14 +980,20 @@ section.page-security {
 }
 
 .page-guarantee__pic {
-    max-width: 1920px;
-    background-size: cover;
+	background-image: url(../img/guarantee/bg-guarantee_001.jpg);
+	max-width: 1920px;
+	height: 529px;
+	background-size: cover;
+    background-position: center;
     margin: 0 auto;
 }
 
 .page-protection__pic {
+	background-image: url(../img/protection/bg-kraftmark.jpg);
 	max-width: 1920px;
-    background-size: cover;
+	height: 735px;
+	background-size: cover;
+	background-position: center;
     margin: 0 auto;
 }
 
@@ -2106,6 +2112,15 @@ input[type=search] {
 	}
 
 	/* ------------------------------------- */
+
+	.page-guarantee__pic {
+		height: 415px;
+	}
+	
+	.page-protection__pic {
+		height: 460px;
+	}
+
 }
 
 @media only screen and (max-width:970px) {
@@ -2537,6 +2552,16 @@ input[type=search] {
 	}
 
 	/* --------------------------------------- */
+
+	.page-guarantee__pic {
+		height: 330px;
+	}
+	
+	.page-protection__pic {
+		height: 420px;
+	}
+
+
 }
 
 @media only screen and (max-width:750px) {
@@ -2951,9 +2976,29 @@ input[type=search] {
 	}
 
 	/* ------------------------------- */
+
+	.page-guarantee__pic {
+		height: 230px;
+	}
+	
+	.page-protection__pic {
+		height: 300px;
+	}
+
+
+
 }
 
 @media only screen and (max-width:480px) {
+
+	.page-guarantee__pic {
+		height: 180px;
+	}
+	
+	.page-protection__pic {
+		height: 190px;
+	}
+
 	.container {
 		max-width: 320px
 	}
