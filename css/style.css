@@ -269,9 +269,9 @@ a.page-business:hover .business-offer__block_pic {
 	background-size: cover;
 }
 
-a.page-business:hover .business-title {
+/* a.page-business:hover .business-title {
     color: #ff293e;
-}
+} */
 
 .business-offer {
 	margin: 223px auto 156px;
