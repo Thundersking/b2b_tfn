@@ -254,6 +254,25 @@ textarea {
     justify-content: center;
 }
 
+.business-offer__block_pic {
+    background-image: url(/img/b2b/icon/icon-knox_white.png);
+    width: 130px;
+	height: 147px;
+	transition: 0.3s ease;
+	background-size: cover;
+}
+
+a.page-business:hover .business-offer__block_pic {
+    background-image: url(/img/b2b/icon/icon-knox_red.png);
+    width: 130px;
+	height: 147px;
+	background-size: cover;
+}
+
+a.page-business:hover .business-title {
+    color: #ff293e;
+}
+
 .business-offer {
 	margin: 223px auto 156px;
 }
@@ -336,6 +355,7 @@ textarea {
 
 .business-title {
 	font-size: 24px;
+	transition: 0.3s ease;
 }
 
 .business-offer__block_desc p:first-child {
