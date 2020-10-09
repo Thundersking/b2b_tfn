@@ -974,6 +974,21 @@ section.page-security {
 
 .page-security__pic {
     margin-top: 96px;
+    margin: 100px auto 0;
+    max-width: 1920px;
+    background-size: cover;
+}
+
+.page-guarantee__pic {
+    max-width: 1920px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.page-protection__pic {
+	max-width: 1920px;
+    background-size: cover;
+    margin: 0 auto;
 }
 
 .page-knox-suite__pic {
