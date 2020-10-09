@@ -317,6 +317,8 @@ textarea {
 	margin-top: 111px;
 	text-align: center;
 	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #293240;
 }
 
 .business-offer__header {
@@ -371,8 +373,9 @@ a.business-offer__button:hover {
 }
 
 .business-offer__block_desc {
-	text-align: center;
+	/* text-align: center; */
 	margin-left: 60px;
+	text-align: left;
 }
 
 .business-title {
