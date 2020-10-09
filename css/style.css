@@ -262,12 +262,12 @@ textarea {
 	background-size: cover;
 }
 
-a.page-business:hover .business-offer__block_pic {
+/* a.page-business:hover .business-offer__block_pic {
     background-image: url(../img/b2b/icon/icon-knox_red.png);
     width: 130px;
 	height: 147px;
 	background-size: cover;
-}
+} */
 
 /* a.page-business:hover .business-title {
     color: #ff293e;
@@ -316,6 +316,7 @@ a.page-business:hover .business-offer__block_pic {
 	color: #ffffff;
 	margin-top: 111px;
 	text-align: center;
+	background-position: center;
 }
 
 .business-offer__header {
@@ -344,8 +345,29 @@ a.page-business:hover .business-offer__block_pic {
 .business-offer__block_knox {
 	display: flex;
 	align-items: center;
-	margin-top: 100px;
+	margin-top: 55px;
 	justify-content: center;
+	margin-bottom: 120px;
+}
+
+a.business-offer__button {
+    width: 231px;
+    height: 17px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 19px 64px;
+    border: 2px solid #fff;
+	border-radius: 3px;
+	transition: 0.3s ease;
+}
+
+a.business-offer__button:hover {
+	background-color: #ff293e;
+	border: 2px solid #ff293e;
 }
 
 .business-offer__block_desc {
@@ -1856,7 +1878,15 @@ input[type=search] {
 	}
 
 	.business-offer__block_knox {
-		margin-top: 80px;
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+
+	a.business-offer__button {
+		font-size: 20px;
+		padding: 16px 50px;
+		background-color: #ff293e;
+		border: 2px solid #ff293e;
 	}
 
 	.business-text {
@@ -1876,10 +1906,10 @@ input[type=search] {
 		height: 130px;
 	}
 	
-	a.page-business:hover .business-offer__block_pic {
+	/* a.page-business:hover .business-offer__block_pic {
 		width: 115px;
 		height: 130px;
-	}
+	} */
 
 	.business-secure__items {
 		margin-top: 40px;
@@ -2124,6 +2154,7 @@ input[type=search] {
 }
 
 @media only screen and (max-width:970px) {
+
 	.container {
 		max-width: 750px
 	}
@@ -2172,11 +2203,18 @@ input[type=search] {
 		width: 100px;
 		height: 113px;
 	}
+
+	a.business-offer__button {
+		font-size: 14px;
+		padding: 9px 27px;
+		background-color: #ff293e;
+		border: 2px solid #ff293e;
+	}
 	
-	a.page-business:hover .business-offer__block_pic {
+/* 	a.page-business:hover .business-offer__block_pic {
 		width: 100px;
 		height: 113px;
-	}
+	} */
 
 	.business-offer__block {
 		height: 450px;
@@ -2554,11 +2592,11 @@ input[type=search] {
 	/* --------------------------------------- */
 
 	.page-guarantee__pic {
-		height: 330px;
+		height: 360px;
 	}
 	
 	.page-protection__pic {
-		height: 420px;
+		height: 460px;
 	}
 
 
@@ -2612,7 +2650,7 @@ input[type=search] {
 	}
 
 	.business-offer__block {
-		height: 346px;
+		height: 400px;
 	}
 
 	.business-secure__items_block:hover {
@@ -2978,11 +3016,16 @@ input[type=search] {
 	/* ------------------------------- */
 
 	.page-guarantee__pic {
-		height: 230px;
+		height: 280px;
 	}
 	
 	.page-protection__pic {
 		height: 300px;
+	}
+
+	a.business-offer__button {
+		font-size: 12px;
+		padding: 7px 22px;
 	}
 
 
@@ -2996,11 +3039,11 @@ input[type=search] {
 	}
 	
 	.page-protection__pic {
-		height: 190px;
+		height: 240px;
 	}
 
 	.container {
-		max-width: 320px
+		max-width: 370px
 	}
 
 	.business {
@@ -3027,7 +3070,7 @@ input[type=search] {
 	}
 
 	.business-offer__block {
-		height: 460px;
+		height: 560px;
 	}
 
 	.business-offer__block span {
