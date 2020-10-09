@@ -244,7 +244,7 @@ textarea {
 /* -------------------------------------   b2b main   --------------------------------------------------  */
 
 .business {
-	background-image: url(/img/b2b/background.jpg);
+	background-image: url(../img/b2b/background.jpg);
 	margin-top: -100px;
 	height: 944px;
 	background-size: cover;
@@ -255,7 +255,7 @@ textarea {
 }
 
 .business-offer__block_pic {
-    background-image: url(/img/b2b/icon/icon-knox_white.png);
+    background-image: url(../img/b2b/icon/icon-knox_white.png);
     width: 130px;
 	height: 147px;
 	transition: 0.3s ease;
@@ -263,7 +263,7 @@ textarea {
 }
 
 a.page-business:hover .business-offer__block_pic {
-    background-image: url(/img/b2b/icon/icon-knox_red.png);
+    background-image: url(../img/b2b/icon/icon-knox_red.png);
     width: 130px;
 	height: 147px;
 	background-size: cover;
@@ -307,7 +307,7 @@ a.page-business:hover .business-title {
 }
 
 .business-offer__block {
-	background-image: url(/img/b2b/bg-offer.jpg);
+	background-image: url(../img/b2b/bg-offer.jpg);
 	height: 671px;
 	display: flex;
     flex-direction: column;
